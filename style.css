@@ -1,0 +1,30 @@
+a:link, a:visited {
+    background-color: aqua;
+    border-radius: 10px;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: greenyellow;
+  }
+
+ul{
+    background-color: antiquewhite;
+    border-radius: 7px;
+    padding: 5px;
+    list-style-type: circle;
+    list-style-position: inside;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    background: azure;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align:center;
+}
