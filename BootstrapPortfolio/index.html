@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--แท็บเมนูด้านบน - สีฟ้า-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+            <!--โลโก้เว็บ / ชื่อเว็บ-->
+            <a class="navbar-brand" href="#">Weerapat's Portfolio</a>
+            
+            <!--ปุ่มเมนูเมื่อย่อหน้าต่าง-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--ปุ่มเมนู-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">หน้าหลัก</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#schedule">รายวิชา</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#skill">ทักษะ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#activity">กิจกรรม</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">เกี่ยวกับฉัน</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">ช่องทางติดต่อ</a>
+                  </li>
+
+                  <!--Dropdown menu-->
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      เพิ่มเติม
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../index.html" target="_blank">งานที่ 1</a></li>
+                      <li><a class="dropdown-item" href="../ex2_menu/ex2_Menu.html" target="_blank">งานที่ 2</a></li>
+                      <li><a class="dropdown-item" href="../ex3_form/ex3_form.html" target="_blank">งานที่ 3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../webprogramming.html" target="_blank">Old MyWork</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--รูป + แนะนำตัวเอง-->
+    <div class="container-fluid_myself pb-3 pt-5">
+        <div class="row_mySelf">
+          <!--รูป-->
+          <div class="col_img">
+            <img class="myProfile" src="Me.jpg" height="300" border-radius>
+          </div>
+
+          <!--ข้อความ-->
+          <div class="col_content my-auto fw-bold">
+            <p id="name">สวัสดีครับ! ผมชื่อวีรภัทร พุทธมงคล (เต้)</p>
+            <h2 id="student">ผมเป็น "นักศึกษา" อยู่ที่ "มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี"</h2>
+            <h5 id="lorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci impedit quibusdam libero cumque a et laudantium vero eveniet assumenda. Quisquam autem cupiditate suscipit perferendis facilis ipsa ad odit pariatur hic.</h5>
+          </div>
+        </div>
+    </div>
+
+    <!--ตารางเรียน-->
+    <div class="container-fluid_subject pt-5" id="schedule">
+      <!--ชื่อตาราง-->
+      <div class="row_title">
+        <div class="title_schedule">
+          <!--รูป-->
+          <img src="img/schedule.png" height="70px" id="img_schedule">
+          <h2 class="mySchedule pb-0 pt-3 fw-bold">ตารางเรียนของผม</h2>
+        </div>
+
+        <!--ตารางเรียน-->
+        <div class="row_table pb-2 pt-4">
+          <table>
+            <tr>
+              <th></th>
+              <th>08.00-09.00</th>
+              <th>09.00-10.00</th>
+              <th>10.00-11.00</th>
+              <th>11.00-12.00</th>
+              <th>12.00-13.00</th>
+              <th>13.00-14.00</th>
+              <th>14.00-15.00</th>
+              <th>15.00-16.00</th>
+              <th>16.00-17.00</th>
+            </tr>
+            <tr>
+              <th scope="row">Monday</th>
+              <td></td>
+              <td></td>
+              <td colspan="2">934-329</td>
+              <td rowspan="5"></td>
+              <td colspan="2">934-303</td>
+              <td colspan="2">934-336</td>
+            </tr>
+            <tr>
+              <th scope="row">Tuesday</th>
+              <td></td>
+              <td colspan="3.5">934-301</td>
+              <td colspan="2">934-309</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Wednesday</th>
+              <td></td>
+              <td colspan="3">935-142</td>
+              <td colspan="2">934-336</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Thursday</th>
+              <td></td>
+              <td colspan="2">934-320</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td colspan="2">934-329</td>
+            </tr>
+            <tr>
+              <th scope="row">Friday</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td colspan="2">934-309</td>
+              <td colspan="2">934-303</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!--ทักษะ-->
+    <div class="container-fluid_skill pt-5" id="skill">
+      <div class="row_title">
+        <div class="title_skill">
+          <!--รูป-->
+          <img src="img/skill.png" height="70px" id="img_skill">
+          <h2 class="mySkill pb-0 pt-3 fw-bold">ทักษะของผม</h2>
+        </div>
+      </div>
+
+      <!--ชั้นที่ 1-->
+      <div class="row_1 pt-4">
+        <!--ภาษาคอม - ด้านซ้าย-->
+        <div class="container-content_1">
+          <!--รูป-->
+          <div class="img_com">
+            <img src="img/Com_Pro.png" height="200">
+          </div>
+
+          <!--หัวข้อ-->
+          <div class="tital_com fw-bold">
+            <p id="title_com">Computer Language</p>
+          </div>
+
+          <!--เนื้อหา-->
+          <div class="content_com">
+            <p>C, C++</p>
+            <p>Java, OOP</p>
+            <p>SQL</p>
+          </div>
+        </div>
+
+        <!--ภาษาเว็บ - ด้านขวา-->
+        <div class="container-content_2">
+          <!--รูป-->
+          <div class="img_web">
+            <img src="img/Web_Pro.png" height="200">
+          </div>
+          
+          <!--หัวข้อ-->
+          <div class="tital_web fw-bold">
+            <p id="title_web">Web Programming</p>
+          </div>
+
+          <!--เนื้อหา-->
+          <div class="content_web">
+            <p>HTML5</p>
+            <p>CSS</p>
+            <p>PHP</p>
+          </div>
+        </div>
+      </div>
+      
+      <!--ชั้นที่ 2-->
+      <div class="row_2">
+        <!--โปรแกรมออฟฟิศ - กลางล่าง-->
+        <div class="container-content_3">
+          <!--หัวข้อ-->
+          <div class="title_ms fw-bold">
+            <p id="title_ms">Microsoft Office</p>
+          </div>
+          
+          <!--รูป-->
+          <div class="img_ms">
+            <div class="img_ms-1">
+              <img src="img/w_ms.png" height="200">
+
+              <!--เนื้อหา-->
+              <p id="w_ms">Microsoft Word</p>
+            </div>
+  
+            <div class="img_ms-2">
+              <img src="img/p_ms.png" height="200">
+
+              <!--เนื้อหา-->
+              <p id="p_ms">Microsoft PowerPoint</p>
+            </div>
+  
+            <div class="img_ms-3">
+              <img src="img/x_ms.png" height="200">
+
+              <!--เนื้อหา-->
+              <p id="x_ms">Microsoft Excel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--กิจกรรม-->
+    <div class="container-fluid_activity pt-5" id="activity">
+      <div class="row_title">
+        <div class="title_activity">
+          <!--รูป-->
+          <img src="img/activity.png" height="70px" id="img_activity">
+          <h2 class="myActivity pb-0 pt-3 fw-bold">กิจกรรม</h2>
+        </div>
+      </div>
+
+      <!--ประมวลผลภาพกิจกรรม-->
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4 pt-4">
+          <div class="col">
+            <div class="card h-100">
+              <img src="img_activity/A-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" id="c-1">Youth In Charge</h5>
+                <p class="card-text" id="ct-1">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img_activity/A-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" id="c-1">Thailand Research Expo 2022</h5>
+                <p class="card-text" id="ct-2">his is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img src="img_activity/A-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title fw-bold" id="c-1">วันไหว้ครู ประจำปีการศึกษา 2565</h5>
+                <p class="card-text" id="ct-3">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--เกี่ยวกับฉัน & ช่องทางติดต่อ-->
+    <div class="container-fluid_about-cont pt-5">
+      <div class="row_3 pt-3">
+        <!--เกี่ยวกับฉัน-->
+        <div class="about">
+          <!--หัวข้อ-->
+          <div class="title_about pb-0 fw-bold" >
+            <!--รูป-->
+            <img src="img/about.png" height="70px" id="img_about">
+            <h2 class="aboutMe pb-0 pt-3 fw-bold" id="about">เกี่ยวกับฉัน</h2>
+          </div>
+
+          <!--เนื้อหา-->
+          <div class="content-about pt-4" id="c-about">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus illo, consequatur deserunt molestias eius doloremque inventore provident aliquam dicta laboriosam veritatis quia nihil qui atque dolores totam culpa? Reprehenderit, ipsa.</p>
+          </div>
+        </div>
+
+        <!--ช่องทางติดต่อ-->
+        <div class="contact">
+          <!--หัวข้อ-->
+          <div class="title_contact pb-0 fw-bold" >
+            <!--รูป-->
+            <img src="img/cont.png" height="70px" id="img_contact">
+            <h2 class="contactMe pb-0 pt-3 fw-bold" id="contact">ช่องทางติดต่อ</h2>
+          </div>
+
+          <!--เนื้อหา-->
+          <div class="content-contact pt-4">
+            <p class="content_title fw-bold" id="t-cont">ข้อมูลทั่วไป</p>
+            <ul class="cont-ul" id="t-cont-item">
+              <li class="cont-item"">ที่อยู่: 91/118 หมู่6 ถ.เลี่ยงเมือง ต.มะขามเตี้ย อ.เมือง จ.สุราษฎร์ธานี 84000</li>
+              <li class="cont-item">เบอร์โทร: 064-0253302</li>
+            </ul>
+
+            <p class="content_title fw-bold" id="t-cont">ช้อมูลสื่อโซเชียลมีเดีย</p>
+            <ul class="cont-ul" id="t-cont-item">
+              <li class="cont-item">Facebook: <a href="https://www.facebook.com/weerapat.puttamongkon/" target="_blank">Tae Weerapat</a></li>
+              <li class="cont-item">Instagram: <a href="https://www.instagram.com/tae.weerapat/" target="_blank">tae.weerapat</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--ฟังก์ชั่นเสริม-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  </body>
+</html>
