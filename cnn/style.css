@@ -47,6 +47,18 @@ b{
     height:70%;
 }
 
+h5:hover, h5 :active {
+    color: red;
+}
+
+p:hover, p :active {
+    color: red;
+}
+
+.sub-title{
+    color: black;
+}
+
 @media(max-width: 576px) {
     .nav-item-1, .nav-item-2{
         display: none;
