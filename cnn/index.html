@@ -12,9 +12,9 @@
 </head>
 <body>
   <!--เมนูบาร์ (ด้านบน)-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
     <div class="container justify-content-between">
-      <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       
@@ -37,8 +37,21 @@
             <li class="nav-item ms-2">
               <a class="nav-link active" href="#">Health</a>
             </li>
-            <li class="nav-item ms-2">
-              <a class="nav-link active" href="#">More</a>
+            <li class="nav-item ms-2 dropdown">
+              <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu bg-dark">
+                <li><a class="dropdown-item bg-dark text-light" href="#">Entertainment</a></li>
+                <li><hr class="dropdown-divider bg-light"></li>
+                <li><a class="dropdown-item bg-dark text-light" href="#">Style</a></li>
+                <li><hr class="dropdown-divider bg-light"></li>
+                <li><a class="dropdown-item bg-dark text-light" href="#">Travel</a></li>
+                <li><hr class="dropdown-divider bg-light"></li>
+                <li><a class="dropdown-item bg-dark text-light" href="#">Sports</a></li>
+                <li><hr class="dropdown-divider bg-light"></li>
+                <li><a class="dropdown-item bg-dark text-light" href="#">Video</a></li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -47,15 +60,15 @@
       <div class="col" id="col-left">
         <div class="navbar-collapse">
           <ul class="navbar-nav ms-auto mb-lg-0 flex-row">
-            <li class="nav-item ms-4 my-auto">
+            <li class="nav-item ms-2 my-auto">
               <a class="nav-link active" aria-current="page" href="#">Audio</a>
             </li>
-            <li class="nav-item ms-4">
-              <a class="nav-link" href="#">
+            <li class="nav-item ms-2">
+              <a class="nav-link py-0" href="#">
                 <img src="img/search_icon.png" height="48px"></a>
               </a>
             </li>
-            <li class="nav-item ms-4 my-auto">
+            <li class="nav-item ms-2 my-auto">
               <button class="btn btn-outline-light" type="submit">Log In</button>
             </li>
           </ul>
@@ -65,6 +78,33 @@
     </div>
   </nav>
 
+  <!--เมนูรอง-->
+  <div class="d-flex justify-content-center">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"><b>PODCAST:</b> Tug of war</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" ><b>UKRAINE-RUSSIA: </b>In photos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Help Ukraine</a>
+      </li>
+      <li class="nav-item-1">
+        <a class="nav-link" href="#"><b>TRENDING: </b>Hong Kong exodus</a>
+      </li>
+      <li class="nav-item-2">
+        <a class="nav-link" href="#">'Ecovado'</a>
+      </li>
+      <li class="nav-item-2">
+        <a class="nav-link" href="#">Andriy Shevchenko</a>
+      </li>
+      <li class="nav-item-2">
+        <a class="nav-link" href="#" >Anne Heche</a>
+      </li>
+    </ul>
+  </div>
+
   <!--เนื้อหา-->
   <div class="container mt-5 my-5">
     <div class="row justify-content-center">
@@ -73,19 +113,19 @@
           <h1 align="center"> Mar-a-Lago has long<br>caused concerns for US intelligence</h1>
         </div>
         <div class="con2">
-          <img src="house.jpg" class="img-fluid" width="" height="">
+          <img src="img/house.jpg" class="img-fluid col-12 mb-2" width="">
         </div>
         <div class="con3">
           <h5>From revealing an airstrike over 'beautiful' cake to<br>cellphone photos of the 'nuclear football,' Trump's<br>Florida home has caused headaches for US security</h5>
         </div>
         <div class="con4">
-          <img src="icon.png" align="left"height="25"></a>
+          <img src="img/icon.png" align="left" height="25"></a>
           <p>Ex-CIA official: I'm seeing the same thing as I did before Jan. 6</p>
-          <hr class="ra col-lg-11">
+          <hr class="ra col-lg-12">
         </div>
         <div class="con5">
           <p><b>Opinion:</b> It wasn't what Mar-a-Lago's original owner had in mind</p>
-          <hr class="ra col-lg-11">
+          <hr class="ra col-lg-12">
         </div>
         <div class="con6">
           <p><b>Analysis:</b> Responding to FBI search, Trump and allies return to his<br>familiar strategy: flood the zone with nonsense</p>
@@ -94,7 +134,7 @@
       
       <div class="section col-lg-3 col-sm-6" align="left">
         <div class="con1">
-          <img src="75.jpg" class="img-fluid w-100"></a>
+          <img src="img/75.jpg" class="img-fluid w-100 mb-2"></a>
         </div>
         <div class="con2">
           <h5>75 years on: How India went<br>from impoverished British colony to emerging giant</h5>
@@ -103,7 +143,7 @@
           <p><u><b>• Opinion:</b> 'Decapitated bodies floating down the canal.' Remembering Indian Partition</u></p>
         </div>
         <div class="con4">
-          <img src="people.jpg" class="img-fluid w-100" height=""></a>
+          <img src="img/people.jpg" class="img-fluid w-100 mb-2"></a>
         </div>
         <div class="con5">
           <h5>Second US congressional delegation visits Taiwan
@@ -116,7 +156,7 @@
 
       <div class="section col-lg-3 col-sm-6" align="left">
         <div class="con1">
-          <img src="lake.jpg" class="img-fluid" alt=""></a>
+          <img src="img/lake.jpg" class="img-fluid col-12 mb-2"></a>
         </div>
         <div class="con2">
           <h5>Europe's drought could signal the death of river cruising</h5><hr>
@@ -131,7 +171,7 @@
           <p>Republicans to issue scathing report criticizing Biden's Afghanistan withdrawal</p><hr>
         </div>
         <div class="con6">
-          <img src="icon.png" align="left" height="25" alt=""></a>
+          <img src="img/icon.png" align="left" height="25"></a>
           <p>Armed Trump supporters gather outside state FBI office</p><hr>
           <p>Children among dozens killed in Egypt church fire</p><hr>
         </div>

@@ -1,9 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-.navbar-brand{
+.body{
     font-family: 'Pacifico', cursive;
 }
 
 .navbar-collapse{
-    font-size: 20px;
+    font-size: 18px;
 }
+
+.nav-item > a:hover, .nav-item-1 > a:hover, .nav-item-2 > a:hover {
+    color: red;
+    display: inline-block;
+}
+
+.nav-link {
+    color: black;
+}
+
+b{
+    color: red;
+}
+
+#b2{
+    color: black;
+}
+
+.nav {
+    white-space: nowrap;
+    flex-wrap:unset;
+    max-width: 100%;     
+}
+
+.nav li {
+    display: inline-block
+    padding: 7px; 
+    position: relative; 
+}
+
+.nav li:not(:last-child)::after{
+    content:""; 
+    border:1px solid #e2e2e2;
+   border-width: 1px 1px 0 0;
+    position:absolute; 
+    right:-3px; 
+    top: 12px;; 
+    height:70%;
+}
+
+@media(max-width: 576px) {
+    .nav-item-1, .nav-item-2{
+        display: none;
+    }
+}
+
