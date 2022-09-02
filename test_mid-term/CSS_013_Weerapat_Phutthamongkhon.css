@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
+.body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+a.nav-link{
+    color: gray;
+}
+
+a.nav-link:hover{
+    color: aqua;
+}
