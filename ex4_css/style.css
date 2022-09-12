@@ -1,0 +1,126 @@
+.nav{
+    margin: 0;
+    padding: 10px;
+    background-color: beige;
+    opacity: 80%;
+}
+
+.name{
+    text-align: center;
+}
+
+.main-content{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-row{
+    width: 75%;
+    background-color: beige;
+}
+
+.row{
+    width: 75%;
+    height: 100%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: beige;
+}
+
+.content-img, .content-detail{
+    width: 600px;
+}
+
+.img{
+    width: 600px;
+    margin-top: 50px;
+    border-radius: 25px;
+}
+
+.content-detail{
+    margin-top: 50px;
+}
+
+.title, .menu-name{
+    color: orangered
+}
+
+.menu-name{
+    font-size: 48px;
+    text-align: center;
+}
+
+.title-nutrition{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: coral;
+}
+
+.title-detail, .title-how{
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: -15px;
+    color: coral;
+}
+
+.detail, .how{
+    font-size: 24px;
+    color: darkgoldenrod;
+}
+
+.nutrition{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nutrition td, .nutrition th{
+    border: 1px solid coral;
+    padding: 8px;
+}
+
+.nutrition tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.nutrition th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 20px;
+    background-color: coral;
+    color: white;
+}
+
+.title-comment{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    color: coral;
+}
+
+.label-comment{
+    font-size: 20px;
+    font-weight: bold;
+    color: darkgoldenrod;
+}
+
+textarea{
+    width: 100%;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 50px;
+    color: #f2f2f2;
+    background-color: coral;
+    border: 0px;
+    border-radius: 6px;
+}

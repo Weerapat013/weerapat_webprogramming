@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
+
+body{
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    color: #FF00B8;
+    font-size: 19px;
+}
+
+/*ปรับสีลิงก์พื้นฐาน(แบบยังไม่มีการเลื่อนเข้าไปหา)*/
+.nav-item > .nav-link {
+    color: #FF00B8;
+    font-size: 17px;
+}
+
+/*ปรับสีลิงก์ทุกครั้งที่มีการเลื่อนเมาส์เข้าไปโดน*/
+.nav-item > a:hover {
+    color: #FF00B8;
+    display: inline-block;
+    padding-bottom: 0;
+    font-weight: bolder;
+}
+
+.nav-item > a:visited {
+    color: #FF00B8;
+    font-weight: bolder;
+    font-size: 19px;
+}
+
+.linkLogin:link{
+    font-family: 'Noto Sans Thai', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.linkLogin:visited{
+    color: white;
+}
+
+.linkRegis:link{
+    font-family: 'Noto Sans Thai', sans-serif;
+    text-decoration: none;
+    color: #FF00B8;
+}
+
+.linkRegis:visited{
+    color: #FF00B8;
+}
+
+/*ปรับสีปุ่ม*/
+.btn1>.btn {
+    color: rgb(255, 255, 255);
+    border-color: #FF00B8;
+    background-color:#FF00B8;
+    font-weight: bolder;
+}
+
+.btn2>.btn {
+    color: #FF00B8;
+    border-color: #FF00B8;
+    background-color:rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.btn-light:hover {
+    color: #FF00B8;
+    border-color: #FF00B8;
+}
+
+/*ปรับสีปุ่ม(เมื่อเลื่อนเมาส์เข้าไปโดน)*/
+.carousel-item{
+    position: relative;
+}
+
+.navbar-toggler{
+    border-color: white;
+    color: white;
+}
+
+.p1 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #FF00B8;
+}
+
+.p2 {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #7C1EDE
+}
+
+.btn3>.btn {
+    color: rgb(255, 255, 255);
+    border-color: #FF00B8;
+    background-color:#FF00B8;
+    font-weight: bolder;
+    width: 170px;
+    height: 60px 
+}
+
+.btn4>.btn {
+    color: #FF00B8;
+    border-color: #FF00B8;
+    background-color:rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+/*ส่วนของแบบฟอร์มเลือกรูปแบบต่างๆ ปุ่ม - ด้านซ้าย*/
+.formCustom{
+    width: 75%;
+}
+
+.error{
+    color: red;
+}
+
+.register{
+    width: 50%;
+}
+
+.btn1>.btn-submit, .btn2>.btn-reset{
+    width: 100%;
+}
+
+input[type="color"] {
+	width: 100%;
+}
+
+.btn-save{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border-color: #FF00B8;
+    background-color:#FF00B8;
+}
+
+.btn-cancel{
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FF00B8;
+    border-color: #FF00B8;
+    background-color:rgb(255, 255, 255);
+}
+
+.btn-share{
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #FF00B8;
+    border-color: #FF00B8;
+    background-color:rgb(255, 255, 255);
+}
+
+.form-label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+select:optional, .check-label{
+    color: #FF00B8;
+}
+
+.PicPreview{
+    width: 100%;
+    height: 600px;
+    border-radius: 12px;
+    background-color: #D9D9D9;
+}

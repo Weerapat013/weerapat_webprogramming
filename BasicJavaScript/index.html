@@ -15,7 +15,7 @@
             }else{
                 return(number + " is odd number by normal function <br>");
             }
-        }
+        };
 
         //arrow function
         let test1 = (n) => {
@@ -24,7 +24,7 @@
             }else{
                 return(n + " is odd number by arrow function <br>");
             }
-        }
+        };
 
         //anonymous function
         let test2 = function(n){
@@ -33,7 +33,7 @@
             }else{
                 return(n + " is odd number by anonymous function <br>");
             }
-        }
+        };
 
         function avg_hight(h){
             let sum = 0
@@ -43,7 +43,7 @@
             }
             avg = sum / i;
             return avg;
-        }
+        };
 
         function max_hight(h){
             let max = 0;
@@ -53,7 +53,7 @@
                 }
             }
             return max;
-        }
+        };
         
         function min_hight(h){
             let min = h[0];
@@ -63,16 +63,38 @@
                 }
             }
             return min;
-        }
+        };
 
         function con_H_to_S(hour){
             return (hour*60)*60;
-        }
+        };
         
         //ปุ่มเปลี่ยนข้อความจาก JavaScript -> Goodbye!!
         function hello(){
             document.querySelector('h1').innerHTML = "Goodbye!!";
-        }
+        };
+
+        let count = 0;
+
+        function counter(){
+            count++;
+            document.querySelector("#h1Count").innerHTML = count;
+            document.querySelector("#h1Count").style.color = "red";
+        };
+
+        function cencelCount(){
+            count = 0;
+            document.querySelector("#h1Count").innerHTML = count;
+            document.querySelector("#h1Count").style.color = "black";
+        };
+
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("#counterBtn").onclick = counter;
+        });
+
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("#cencalCount").onclick = cencelCount;
+        });
     </script>
 </head>
 <body>
@@ -124,5 +146,9 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt expedita, hic nesciunt accusantium ducimus fugiat inventore consectetur beatae pariatur molestias soluta unde deserunt, nulla numquam suscipit quaerat est dolorem nisi.</p>
 
     <button onclick="hello()">click here</button>
+
+    <h1 id="h1Count">0</h1>
+    <button id="counterBtn">Count</button>
+    <button id="cencalCount">Cancal</button>
 </body>
 </html>
