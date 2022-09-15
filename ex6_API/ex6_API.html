@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active Learning 6</title>
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Exchange Rates API</h1>
+    <h2>อัตราแลกเปลี่ยน </h2>
+    <h3 id="exchangeRate"></h3>
+
+    <div class="thb">
+        <label for="fromTHB">จากเงินไทย</label>
+        <input type="number" id="amount-THB" value="50000">
+        <label for="to">บาท.</label>
+    </div>
+    
+    <form id="conv">
+        
+    
+        <div class="eur">
+            <label for="toEUR">เป็นเงินยูโร = </label>
+            <!--
+                <input type="number" id="amount-EUR">
+            -->
+            <label for="amountEUR" id="amount-EUR"></label>
+        
+            <label for="to">ยูโร.</label>
+        </div>
+
+        <div class="btn">
+            <button type="submit" id="change">
+                แปลง
+            </button>
+        </div>
+    </form> 
+</body>
+</html>
