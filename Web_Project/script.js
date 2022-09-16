@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
             errMesID = "กรุณาใส่รหัสบัตรประชาชนให้ครบ 13 หลัก";
         }
 
-        if(id.length <= 10){
+        if(id.length <= 13){
             checkID = true;
         }else{
             checkID = false;
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function(){
             errMesPassword = "กรุณาใส่รหัสผ่านมากกว่า 8 ตัวอักษร";
         }
 
-         if("#confirmpassword" == "#password"){
+        if(confirmpassword == password){
             checkConfirmPassword = true;
         }else{
             checkConfirmPassword = false;
