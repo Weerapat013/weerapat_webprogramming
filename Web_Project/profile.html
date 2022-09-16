@@ -1,0 +1,185 @@
+<!-- วีรภัทร - รับผิดชอบ -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Profile</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid ms-2 me-2">
+                <!--โลโก้ icon ก้อยชาไทย--> 
+                <a href="#"><img src="/Web_Project/IMG/LogoT.jpg" alt="" width="200" class="img1"></a>
+                <div class="topnav">
+                    <div class="topnap-right">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="icon">
+                                <img src="/Web_Project/IMG/ham.png">
+                            </span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse my-auto" id="navbarSupportedContent">
+                            <!--ส่วนของเมนูต่างๆ--> 
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 mt-1" aria-current="page" href="/Web_Project/main.html">หน้าหลัก</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 mt-1" href="/Web_Project/create.html">ออกแบบปุ่ม</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 mt-1" href="#">ปุ่มของฉัน</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 mt-1" href="#">โปรไฟล์</a>
+                                </li>
+                            </ul>
+
+                            <div class="btn2">
+                                <button type="button" class="btn btn-light mx-2 my-2">
+                                    <a class="nav-link mx-2 mt-1" href="#">ออกจากระบบ</a>
+                                </button>
+                            </div>             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row mt-5">
+                <div class="PicSection col-sm-12 col-lg-6">
+                    <div class="mb-5 d-flex justify-content-center">
+                        <img src="/Web_Project/IMG/nikky.png" alt="" class="imgPic mb-3">
+                    </div>
+                </div>
+                <div class="InfoSection col-sm-12 col-lg-6">
+                    <div class="content mx-auto">
+                        <div class="mb-4">
+                            <h1 class="profileTitle">
+                                ข้อมูลโปรไฟล์ผู้ใช้
+                            </h1>
+                        </div>
+
+                        <div class="common-content mb-4">
+                            <div class="mb-3">
+                                <h3 class="profileSubTitle">
+                                    ข้อมูลทั่วไป
+                                </h3>
+                            </div>
+    
+                            <div class="mb-2">
+                                <label for="prefixTitle" class="title-label">คำนำหน้า : </label>
+                                <label for="prefixDetail" class="detail-label">นาย, นางสาว, นาง</label>
+                            </div>
+                            
+                            <div class="mb-2">
+                                <label for="nameTitle" class="title-label">ชื่อ : </label>
+                                <label for="nameDetail" class="detail-label"> ชื่อจริงผู้ใช้</label>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="surnameTitle" class="title-label">นามสกุล : </label>
+                                <label for="surnameDetail" class="detail-label"> นามสกุลผู้ใช้</label>
+                            </div>
+    
+                            <div class="mb-2">
+                                <label for="surnameTitle" class="title-label">รหัสบัตรประชาชน : </label>
+                                <label for="surnameDetail" class="detail-label"> 0000000000000</label>
+                            </div>
+    
+                            <div class="mb-2">
+                                <label for="telTitle" class="title-label">เบอร์ติดต่อ : </label>
+                                <label for="telDetail" class="detail-label"> 0877777777</label>
+                            </div>
+    
+                            <div class="mb-2">
+                                <label for="adrTitle" class="title-label">ที่อยู่ : </label>
+                                <label for="adrDetail" class="detail-label">99/99 ถ.เส้นหนึ่ง ต.บนดิน อ.สักแห่ง จ.ไม่บอก 00000</label>
+                            </div>
+                        </div>
+
+                        <div class="personal-content">
+                            <div class="mb-3">
+                                <h3 class="profileSubTitle">
+                                    ข้อมูลส่วนตัว
+                                </h3>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="idTitle" class="title-label">ชื่อผู้ใช้ : </label>
+                                <label for="idDetail" class="detail-label">ชื่อผู้ใช้บนเว็บ</label>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="emailTitle" class="title-label">อีเมลล์ : </label>
+                                <label for="emailDetail" class="detail-label">ตัวอย่างอีเมลล์@hotmail.com</label>
+                            </div>
+
+                            <div class="mb-2">
+                                <label for="pwTitle" class="title-label">รหัสผ่าย : </label>
+                                <label for="pwDetail" class="detail-label">* * * * * * * * * *</label>
+                            </div>
+                        </div>
+
+                        <div class="btn-content">
+                            <div class="btn1 mt-4 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-change btn-light ">แก้ไขโปรไฟล์</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer mt-5 p-4 d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-footer col-4">
+                        <a href="#"><img src="/Web_Project/IMG/LogoT.jpg" alt="" width="200" class="img1"></a>
+                    </div>
+    
+                    <div class="col-footer col-4">
+                        <div class="title-footer">
+                            <h5>บริการลูกค้า</h5>
+                        </div>
+                        <ul class="ul-footer p-2">
+                            <li class="ul-footer-item py-2">
+                                <img src="/Web_Project/IMG/warn_icon.png" alt="" class="footer-item-icon me-2">
+                                <a class="ul-footer-link" href="#">แจ้งปัญหา</a>
+                            </li>
+                            <li class="ul-footer-item py-2">
+                                <img src="/Web_Project/IMG/file_icon.png" alt="" class="footer-item-icon me-2">
+                                <a class="ul-footer-link" href="#">วิธีการใช้</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="col-footer col-4">
+                        <div class="title-footer">
+                            <h5>ติดต่อลูกค้า</h5>
+                        </div>
+                        <ul class="ul-footer p-2">
+                            <li class="ul-footer-item py-2">
+                                <img src="/Web_Project/IMG/email_icon.png" alt="" class="footer-item-icon me-2">
+                                <a class="ul-footer-link" href="#">MakeYourKey@gmail.com</a>
+                            </li>
+                            <li class="ul-footer-item py-2">
+                                <img src="/Web_Project/IMG/phone_icon.png" alt="" class="footer-item-icon me-2">
+                                <a class="ul-footer-link" href="#">087-7777777</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!-- บูรพา - รับผิดชอบ -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      body {
+        background-image: url('/Web_Project/IMG/keyboard-BG.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!--เปิดส่วนของ Navber--> 
+    <nav class="navbar navbar-expand-xl">
+      <div class="container-fluid ms-2 me-2">
+        <!--โลโก้ icon navbar--> 
+        <a href="/Web_Project/index.html"><img src="/Web_Project/IMG/LogoT.jpg" alt="" width="200" class="img1"></a>
+        
+        <div class="topnav">
+          <div class="topnap-right">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon">
+                <img src="/Web_Project/IMG/ham.png">
+              </span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <!--ส่วนของเมนูต่างๆ--> 
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
+                <li class="nav-item">
+                  <a class="nav-link mx-2 mt-1"aria-current="page" href="/Web_Project/index.html">หน้าแรก</a>
+                </li>
+                <li class="nav-item mx-2 mt-1">
+                  <a class="nav-link" href="#">เกี่ยวกับเรา</a>
+                </li>
+                <li class="nav-item mx-2 mt-1">
+                  <a class="nav-link" href="#">สนับสนุน</a>
+                </li>
+              </ul>
+              
+              <div class="btn1">
+                <button type="button" class="btn btn-login btn-light mx-2 my-2" >
+                  <a href="/Web_Project/login.html" class="linkLogin">เข้าสู่ระบบ</a>
+                </button>
+              </div>
+              <div class="btn2">
+                <button type="button" class="btn btn-regis btn-light mx-2 my-2" disabled>สมัครสมาชิก</button>
+              </div>               
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--จบส่วนของ Navbar-->
+
+    <div class="container">
+      <div class="register mx-auto p-4 rounded">
+        <h1 class="formHeader-regis mb-4">สร้างบัญชีผู้ใช้</h1>
+        <form action="" method="get" id="registerForm">
+          <div class="mb-3">
+            <label for="getPrefix" class="form-label-regis">คำนำหน้า</label><br>
+            
+            <div class="row">
+              <div class="col">
+                <input class="form-check-input border border-2 border-dark" type="radio" name="inlineRadioOptions" id="prefix1" value="mr." required>
+                <label class="form-check-label ms-2" for="prefix1">นาย</label>
+              </div>
+
+              <div class="col">
+                <input class="form-check-input border border-2 border-dark" type="radio" name="inlineRadioOptions" id="prefix2" value="mrs." required>
+                <label class="form-check-label ms-2" for="prefix2">นาง</label>
+              </div>
+
+              <div class="col">
+                <input class="form-check-input border border-2 border-dark" type="radio" name="inlineRadioOptions" id="prefix3" value="miss" required>
+                <label class="form-check-label ms-2" for="prefix3">นางสาว</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="row">
+              <div class="col">
+                <label for="getFirstName" class="form-label-regis">ชื่อ</label>
+                <input type="text" class="form-control border border-2 border-dark" placeholder="First name" aria-label="First name" required>
+              </div>
+              <div class="col">
+                <label for="getLastName" class="form-label-regis">นามสกุล</label>
+                <input type="text" class="form-control border border-2 border-dark" placeholder="Last name" aria-label="Last name" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="getID" class="form-label-regis">รหัสบัตรประชาชน</label>
+            <input type="number" class="form-control border border-2 border-dark" id="id" aria-describedby="ID" placeholder="ID card code" required>
+            <div id="alertID" class="form-text error"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="getTel" class="form-label-regis">เบอร์โทรติดต่อ</label>
+            <input type="number" class="form-control border border-2 border-dark" id="tel" aria-describedby="Tel" placeholder="Phone number" required>
+            <div id="alertTel" class="form-text error"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="getAddress" class="form-label-regis">ที่อยู่</label>
+            <input type="text" class="form-control border border-2 border-dark" id="address" placeholder="Address" required>
+            <div id="alertAddress" class="form-text error"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="getUsername" class="form-label-regis">ชื่อผู้ใช้</label>
+            <input type="text" class="form-control border border-2 border-dark" id="username" aria-describedby="Username" placeholder="Username" required>
+            <div id="alertUsername" class="form-text error"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="getEmail" class="form-label-regis">อีเมล</label>
+            <input type="email" class="form-control border border-2 border-dark" id="email" aria-describedby="Email" placeholder="Email" required>
+            <div id="alertEmail" class="form-text error"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="getPassword" class="form-label-regis">รหัสผ่าน</label>
+            <input type="password" class="form-control border border-2 border-dark" id="password" placeholder="Password" required>
+            <div id="alertPassword" class="form-text error"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="getConfirmPassword" class="form-label-regis">ยืนยันรหัสผ่าน</label>
+            <input type="password" class="form-control border border-2 border-dark" id="confirmpassword" placeholder="Confirm-Password" required>
+            <div id="alertConfirmPassword" class="form-text error"></div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="btn1">
+                <button type="submit" class="btn btn-submit btn-primary">สมัครสมาชิก</button>
+              </div>
+            </div>
+            <div class="col">
+              <div class="btn2">
+                <button type="reset" class="btn btn-reset btn-light">ล้างข้อมูล</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+  </body>
+</html>

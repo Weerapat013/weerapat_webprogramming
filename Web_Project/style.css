@@ -1,64 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap');
 
-body{
+body {
     font-family: 'Noto Sans Thai', sans-serif;
 }
 
 .navbar {
     background-color: rgb(0, 0, 0);
     color: #FF00B8;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 /*ปรับสีลิงก์พื้นฐาน(แบบยังไม่มีการเลื่อนเข้าไปหา)*/
 .nav-item > .nav-link {
     color: #FF00B8;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 /*ปรับสีลิงก์ทุกครั้งที่มีการเลื่อนเมาส์เข้าไปโดน*/
 .nav-item > a:hover {
     color: #FF00B8;
     display: inline-block;
-    padding-bottom: 0;
     font-weight: bolder;
 }
 
 .nav-item > a:visited {
     color: #FF00B8;
     font-weight: bolder;
-    font-size: 19px;
+    font-size: 18px;
 }
 
-.linkLogin:link{
+.linkLogin:link {
     font-family: 'Noto Sans Thai', sans-serif;
     text-decoration: none;
     color: white;
 }
 
-.linkLogin:visited{
+.linkLogin:visited {
     color: white;
 }
 
-.linkRegis:link{
+.linkRegis:link {
     font-family: 'Noto Sans Thai', sans-serif;
     text-decoration: none;
     color: #FF00B8;
 }
 
-.linkRegis:visited{
+.linkRegis:visited {
     color: #FF00B8;
 }
 
 /*ปรับสีปุ่ม*/
 .btn1>.btn {
+    font-size: 18px;
     color: rgb(255, 255, 255);
     border-color: #FF00B8;
     background-color:#FF00B8;
     font-weight: bolder;
 }
 
+.btn-login {
+    width: 150px;
+}
+
+.btn-regis {
+    width: 150px;
+}
+
 .btn2>.btn {
+    font-size: 18px;
     color: #FF00B8;
     border-color: #FF00B8;
     background-color:rgb(255, 255, 255);
@@ -70,34 +79,34 @@ body{
     border-color: #FF00B8;
 }
 
+.btn-main {
+    width: 170px;
+}
+
 /*ปรับสีปุ่ม(เมื่อเลื่อนเมาส์เข้าไปโดน)*/
-.carousel-item{
+.carousel-item {
     position: relative;
 }
 
-.navbar-toggler{
-    border-color: white;
-    color: white;
-}
-
-.p1 {
-    font-size: 35px;
+.p-title {
+    font-size: 64px;
     font-weight: bolder;
     color: #FF00B8;
 }
 
-.p2 {
-    font-size: 18px;
+.p-detail {
+    font-size: 32px;
     font-weight: bolder;
     color: #7C1EDE
 }
 
 .btn3>.btn {
+    font-size: 32px;
     color: rgb(255, 255, 255);
     border-color: #FF00B8;
     background-color:#FF00B8;
     font-weight: bolder;
-    width: 170px;
+    width: 300px;
     height: 60px 
 }
 
@@ -109,19 +118,40 @@ body{
 }
 
 /*ส่วนของแบบฟอร์มเลือกรูปแบบต่างๆ ปุ่ม - ด้านซ้าย*/
-.formCustom{
+.formCustom {
     width: 75%;
 }
 
-.error{
+.error {
     color: red;
 }
 
-.register{
-    width: 50%;
+.login {
+    width: 600px;
+    background-color: rgb(45, 45, 45);
 }
 
-.btn1>.btn-submit, .btn2>.btn-reset{
+.formHeader-login, .formHeader-regis {
+    color: #FF00B8;
+    font-weight: bolder;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.form-label-login, .form-label-regis {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7C1EDE;
+    margin-bottom: 8px;
+}
+
+.register{
+    width: 75%;
+    margin-top: 72px;
+    background-color: rgb(255, 255, 255);
+}
+
+.btn1>.btn-submit, .btn2>.btn-reset {
     width: 100%;
 }
 
@@ -129,9 +159,9 @@ input[type="color"] {
 	width: 100%;
 }
 
-.btn-save{
+.btn1 > .btn-save {
     width: 100%;
-    height: 50px;
+    height: 45px;
     font-size: 20px;
     font-weight: bolder;
     color: rgb(255, 255, 255);
@@ -139,9 +169,9 @@ input[type="color"] {
     background-color:#FF00B8;
 }
 
-.btn-cancel{
+.btn2 > .btn-cancel {
     width: 100%;
-    height: 50px;
+    height: 45px;
     font-size: 20px;
     font-weight: bolder;
     color: #FF00B8;
@@ -149,28 +179,161 @@ input[type="color"] {
     background-color:rgb(255, 255, 255);
 }
 
-.btn-share{
+.btn2 > .btn-share {
     width: 50%;
-    height: 50px;
-    font-size: 20px;
+    height: 45px;
+    font-size: 24px;
     font-weight: bolder;
     color: #FF00B8;
     border-color: #FF00B8;
     background-color:rgb(255, 255, 255);
 }
 
-.form-label{
+.btn1 > .btn-change {
+    width: 100%;
+    height: 45px;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    border-color: #FF00B8;
+    background-color:#FF00B8;
+}
+
+.p-title {
+    font-weight: bolder;
+}
+
+.form-label {
     font-size: 20px;
     font-weight: bold;
 }
 
-select:optional, .check-label{
+.profileTitle {
+    font-size: 48px;
+    font-weight: bold;
     color: #FF00B8;
 }
 
-.PicPreview{
+.profileSubTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #7C1EDE;
+}
+
+.title-label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.detail-label {
+    font-size: 24px;
+}
+
+select:optional, .check-label {
+    color: #FF00B8;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus {
+    color: #FF00B8;
+    border: 1px solid #7C1EDE;
+}
+
+.getName::placeholder, .form-control::placeholder {
+    color: #FF00B8;
+}
+
+.getName {
+    color: #FF00B8;
+}
+
+.PicPreview {
     width: 100%;
     height: 600px;
     border-radius: 12px;
     background-color: #D9D9D9;
+}
+
+.previewPic{
+    height: 75%;
+}
+
+.pop-Title, .sub-Title {
+    font-weight: bolder;
+    color: #FF00B8;
+}
+
+.pop-card-title {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #FF00B8;
+}
+
+.pop-card-text {
+    font-size: 28px;
+    color: #7C1EDE;
+}
+
+.sub-card-title {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #7C1EDE;
+}
+
+.sub-card-text {
+    font-size: 18px;
+}
+
+.imgPic {
+    height: 400px;
+    border: 5px solid;
+    border-color: #FF00B8;
+    border-radius: 12px;
+}
+
+.card {
+    width: 100%;
+    padding: 6px;
+}
+
+.img-popCard {
+    width: 38px;
+}
+
+.img-subCard {
+    width: 32px;
+}
+
+.footer {
+    background-color: black;
+}
+
+.col-footer {
+    padding: 0px;
+}
+
+.title-footer {
+    color: #FF00B8;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.ul-footer-item {
+    list-style-type: none;
+}
+
+.ul-footer-link {
+    font-size: 18px;
+    color: #7C1EDE;
+    text-decoration: none;
+}
+
+.ul-footer-link:hover {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #833fca;
+    text-decoration: none;
+}
+
+.footer-item-icon {
+    width: 24px;
 }

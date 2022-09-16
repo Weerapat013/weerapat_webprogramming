@@ -1,43 +1,58 @@
+<!-- วีรภัทร - รับผิดชอบ -->
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Create your Key</title>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>create</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-xl  ">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <nav class="navbar navbar-expand-xl">
         <div class="container-fluid ms-2 me-2">
             <!--โลโก้ icon ก้อยชาไทย--> 
-            <a href="#"><img src="/Web_Project/IMG/LogoT.jpg" alt="" width="200"class="img1"></a>
+            <a href="#"><img src="/Web_Project/IMG/LogoT.jpg" alt="" width="200" class="img1"></a>
             <div class="topnav">
                 <div class="topnap-right">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="icon">
+                            <img src="/Web_Project/IMG/ham.png">
+                        </span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse my-auto" id="navbarSupportedContent">
                         <!--ส่วนของเมนูต่างๆ--> 
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-2">
                             <li class="nav-item">
-                                <a class="nav-link ms-2 me-2"aria-current="page" href="#">หน้าหลัก</a>
+                                <a class="nav-link mx-2 mt-1"aria-current="page" href="/Web_Project/main.html">หน้าหลัก</a>
                             </li>
-                            <li class="nav-item ms-2 me-2">
-                                <a class="nav-link" href="#">ปุ่มของฉัน</a>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2 mt-1" href="#">ออกแบบปุ่ม</a>
                             </li>
-                            <li class="nav-item ms-2 me-2">
-                                <a class="nav-link" href="#">กระดานสนทนา</a>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2 mt-1" href="#">ปุ่มของฉัน</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-2 mt-1" href="/Web_Project/profile.html">โปรไฟล์</a>
                             </li>
                         </ul>
+
+                        <div class="btn2">
+                            <button type="button" class="btn btn-light mx-2 my-2">
+                                <a class="nav-link mx-2 mt-1" href="#">ออกจากระบบ</a>
+                            </button>
+                        </div>
+
+                        <!--
                         <div class="btn1">
-                            <button type="button" class="btn btn-light ms-2 me-2" >เข้าสู่ระบบ</button>
+                            <button type="button" class="btn btn-light ms-2 me-2 my-2" >เข้าสู่ระบบ</button>
                         </div>
                         <div class="btn2">
-                            <button type="button" class="btn btn-light ms-2">สมัครสมาชิก</button>
-                        </div>               
+                            <button type="button" class="btn btn-light ms-2 my-2">สมัครสมาชิก</button>
+                        </div>
+                        -->               
                     </div>
                 </div>
             </div>
@@ -46,9 +61,15 @@
 
     <div class="container">
         <div class="row mt-5">
-            <div class="formSection col-sm-12 col-lg-6 ">
+            <div class="formSection col-sm-12 col-lg-6">
                 <div class="formCustom mx-auto">
                     <form>
+                        <div class="mb-3">
+                            <label for="getName" class="form-label">ชื่อปุ่ม</label>
+                            <input class="form-control getName border border-2 border-dark" type="text" placeholder="โปรใส่ชื่อปุ่มของคุณ" aria-label="default input example">
+                            <div id="alertName" class="form-text error"></div>
+                        </div>
+
                         <div class="mb-3">
                           <label for="getProfilekey" class="form-label">โปรไฟล์ปุ่ม</label>
                           <a href="#"><img src="/Web_Project/IMG/Information_Icon.png" alt="" width="24px" class="imgInfo1 ms-2 pb-1"></a>
@@ -293,11 +314,11 @@
                             <label for="getTypeLight" class="form-label">รูปแบบตัวอักษร</label>
                             <div class="row">
                                 <div class="col">
-                                    <input class="form-check-input border border-2 border-dark" type="radio" name="getOpaque" id="" value="Opaque">
+                                    <input class="form-check-input border border-2 border-dark" type="radio" name="flexRadioDefault" id="" value="Opaque">
                                     <label for="getTypeOpaque" class="check-label ms-2">ทึบแสง</label>
                                 </div>
                                 <div class="col">
-                                    <input class="form-check-input border border-2 border-dark" type="radio" name="getBacklight" id="" value="Backlight">
+                                    <input class="form-check-input border border-2 border-dark" type="radio" name="flexRadioDefault" id="" value="Backlight">
                                     <label for="getTypeBacklight" class="check-label ms-2">ลอดแสง</label>
                                 </div>
                             </div>
@@ -338,10 +359,9 @@
             <div class="PreviewSection col-sm-12 col-lg-6 ">
                 <div class="mb-3">
                     <label for="getPicPreview" class="form-label">ภาพตัวอย่าง</label>
-                    <div class="PicPreview">
-                        
+                    <div class="PicPreview d-flex justify-content-center">
+                        <img src="/Web_Project/IMG/previewPic.png" alt="" class="previewPic my-auto mx-auto">
                     </div>
-                    
                 </div>
 
                 <div class="mt-3 mb-3">
@@ -363,7 +383,6 @@
                         </div>
                     </div>
                 </div>
-                
 
                 <div class="btn2 mt-3 d-flex justify-content-end">
                     <button type="submit" class="btn btn-share btn-light ">แชร์</button>
@@ -371,6 +390,48 @@
             </div>
         </div>
     </div>
+
+    <footer class="footer mt-5 p-4 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-footer col-4">
+                    <a href="#"><img src="/Web_Project/IMG/LogoT.jpg" alt="" width="200" class="img1"></a>
+                </div>
+
+                <div class="col-footer col-4">
+                    <div class="title-footer">
+                        <h5>บริการลูกค้า</h5>
+                    </div>
+                    <ul class="ul-footer p-2">
+                        <li class="ul-footer-item py-2">
+                            <img src="/Web_Project/IMG/warn_icon.png" alt="" class="footer-item-icon me-2">
+                            <a class="ul-footer-link" href="#">แจ้งปัญหา</a>
+                        </li>
+                        <li class="ul-footer-item py-2">
+                            <img src="/Web_Project/IMG/file_icon.png" alt="" class="footer-item-icon me-2">
+                            <a class="ul-footer-link" href="#">วิธีการใช้</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-footer col-4">
+                    <div class="title-footer">
+                        <h5>ติดต่อลูกค้า</h5>
+                    </div>
+                    <ul class="ul-footer p-2">
+                        <li class="ul-footer-item py-2">
+                            <img src="/Web_Project/IMG/email_icon.png" alt="" class="footer-item-icon me-2">
+                            <a class="ul-footer-link" href="#">MakeYourKey@gmail.com</a>
+                        </li>
+                        <li class="ul-footer-item py-2">
+                            <img src="/Web_Project/IMG/phone_icon.png" alt="" class="footer-item-icon me-2">
+                            <a class="ul-footer-link" href="#">087-7777777</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
